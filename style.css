@@ -1,33 +1,68 @@
+/* reset */
+
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* .root {
+    font-size: clamp(1rem, 2.2vh, 1.5rem);
+}
+ */
 html {
-    font-size: 18px;
+    
+    font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 800px;
     background-color:plum;
     background-image: radial-gradient(whitesmoke, purple );
     text-align: center;
-    
-    
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 0 0 20px black;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
     color: white;
     margin-top: 0;
-    border: 2px solid #333;
     padding: 7%;
-    background-color: #333;
-    
+    background-color: #000;  
+
+}
+
+
+table {
+    margin: 0 auto;
 }
 
 table, tr, th, td, caption {
-    border: 1px solid #eee;
+    border: 1px solid purple;
     font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
-}
+    /* border-collapse: collapse; */
+    }
+
 
  .topnav {
     overflow: hidden;
@@ -38,7 +73,7 @@ table, tr, th, td, caption {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 1.2rem;
     }
     
     .topnav a:hover {
@@ -46,13 +81,15 @@ table, tr, th, td, caption {
         color: black;
     }
     
-    /* .topnav a.active {
-        background-color: rgb(164, 54, 176);
-        color: white;
-    } */
-
-    @media screen and (min-width: 576px) {
-       body {
-        font-size: min(25px, 50px)
-       };
+    .image-nails {
+        width: 100%;
+        height: auto;
     }
+    /* @media screen and (min-width: 576px) {
+        h1 {
+            font-size: 2em;
+        }
+        .topnav {
+            font-size: 2em;
+        }
+    } */
